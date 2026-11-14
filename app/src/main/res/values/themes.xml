@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.OpenMultiConverter" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27" xmlns:tools="http://schemas.android.com/tools">true</item>
+    </style>
+</resources>

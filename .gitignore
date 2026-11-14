@@ -1,0 +1,13 @@
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+.kotlin/
+keystore.properties
+*.jks
+*.keystore
+app/src/main/jniLibs/
+native/build/
+native/out/
+release-out/
