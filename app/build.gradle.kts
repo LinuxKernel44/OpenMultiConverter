@@ -7,7 +7,7 @@ plugins {
 }
 
 val keystoreProps = Properties().apply {
-    val f = rootProject.file("keystore.properties")
+    val f = (project.findProperty("keystoreProperties") as String?)?.let { file(it) } ?: rootProject.file("keystore.properties")
     if (f.exists()) f.inputStream().use { load(it) }
 }
 
