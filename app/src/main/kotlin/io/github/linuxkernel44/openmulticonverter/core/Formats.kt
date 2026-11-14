@@ -75,7 +75,8 @@ object Formats {
     val WMA = OutputFormat(
         "wma", "WMA", "Windows Media Audio v2", "wma", "audio/x-ms-wma", "asf", false,
         setOf("wmav2", "wmav1"), supportsCover = false,
-        bitrates = listOf(320, 256, 192, 160, 128, 96, 64).map { it * 1000 }, defaultBitrate = 192_000, maxChannels = 2,
+        bitrates = listOf(320, 256, 192, 160, 128, 96, 64).map { it * 1000 }, defaultBitrate = 192_000,
+        sampleRates = listOf(8000, 11025, 16000, 22050, 32000, 44100, 48000), maxChannels = 2,
     )
     val AC3 = OutputFormat(
         "ac3", "AC-3", "Dolby Digital", "ac3", "audio/ac3", "ac3", false,
